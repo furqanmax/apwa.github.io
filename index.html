@@ -26,11 +26,11 @@
 </head>
 <body class="fullscreen">
   
-  <div class="row">
+
     <div id="root" class="container">
       <h1 class="title">Hello World!</h1>
     </div>
-  </div>
+ 
   <script src="js/main.js"></script>
   <script>
     const app = document.getElementById('root')
@@ -52,7 +52,7 @@ request.onload = function() {
   if (request.status >= 200 && request.status < 400) {
     data.forEach(movie => {
       const card = document.createElement('div')
-      card.setAttribute('class', 'card col-4')
+      card.setAttribute('class', 'card ')
 
       const h1 = document.createElement('h1')
       h1.textContent = movie.title
